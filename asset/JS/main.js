@@ -1,5 +1,5 @@
 // 1. chiedi all’utente il cognome
-var surname = prompt('Type yoour surname please');
+var surname = prompt('Type your surname please');
 // 2. inseriscilo in un array con altri cognomi: "Bianchi’, "Neri’, "Rossi’, "Verdi’, "Gialli’
 var list = ["Bianchi", "Neri", "Rossi", "Verdi", "Gialli"];
 
