@@ -6,15 +6,16 @@ var list = ["Bianchi", "Neri", "Rossi", "Verdi", "Gialli"];
 // ---- Controllo che il congome non sia già presente nell'array --------- 
 var verifica = list.indexOf(surname);
 
-if (verifica !== -1) {
-    alert('ERROR 404, you are already IN');
-} else {
+if (surname == "") {
+    alert('No blanks allowed. Insert your surname');
+    document.getElementById('stampa').innerHTML = "TRY AGAIN";
+
+} else if (verifica !== -1) {
+    alert('ERROR 404, you are already IN')
+    document.getElementById('stampa').innerHTML = "TRY AGAIN";
+}
+else {
     list.push(surname);
-
-    // if (list.includes(surname) == true{
-    //     alert("Your last name is already in our systems. Please, try again");
-
-    // }
 
 
     // console.log(list);
